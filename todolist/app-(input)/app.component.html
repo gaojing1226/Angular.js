@@ -1,0 +1,8 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<header>
+    <div class="todo">
+      <label for="todolist">ToDoList</label>
+      <input class="addTodo"  type="text" placeholder="添加ToDo" [(ngModel)]="data" (keyup)="keyData($event)">
+    </div>
+</header>
+<app-a [arrData]="arrD" (getIndex)="getI($event)"></app-a>

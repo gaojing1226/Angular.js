@@ -14,6 +14,11 @@ export class AppComponent {
   }
   data:string;
   arrD=[];
+  index:number;
+  
+  getIndex(i){
+    this.index=i;
+  }
   
   keyData(e){
       if(e.keyCode==13){

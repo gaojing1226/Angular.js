@@ -15,6 +15,7 @@ export class AppComponent {
   keyData(e){
       if(e.keyCode==13){
         this.arrD.push(this.data);
+        this.getlocaldata.setItem('list1',this.data);
         this.data = '';
       }
   }

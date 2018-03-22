@@ -39,11 +39,16 @@ export class AComponent implements OnInit {
     changeData2(i){
       this.arrData.push(this.dataA[i])
       this.dataA.splice(i,1);
+      
+      this.getlocaldata.setItem('list1',this.arrData);
+      this.getlocaldata.setItem('list1',this.arrData);
     }
     delData(i){
       this.arrData.splice(i,1);
+      this.getlocaldata.setItem('list1',this.arrData);
     }
     delData2(i){
       this.dataA.splice(i,1);
+      this.getlocaldata.setItem('list1',this.arrData);
     }
 }

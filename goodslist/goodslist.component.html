@@ -1,0 +1,12 @@
+<router-outlet></router-outlet>
+<div class="ui-content">
+<ul id="goodList">
+  <li *ngFor="let item of list;let i = index" (click)="goDetail(i)">
+    <img src="{{item.goodsListImg}}" alt="">
+    <p>{{item.goodsName.slice(0,5)}}...</p>
+    <span class="hot">热卖</span>
+    <span class="price">¥{{item.price}}</span>
+    <p style="clear:both;font-size:0.3rem;">折扣:{{item.discount}}</p>
+  </li>
+</ul>
+</div>

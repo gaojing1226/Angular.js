@@ -1,0 +1,38 @@
+page-about {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .list{
+        margin: 0px;
+    }
+    .list .item{
+        border-bottom: 0.5px solid #e5e5e5;
+        font-size: 14px;
+        width: 100%;
+        background: #ffffff;
+    }
+    .list2{
+        height: 90px;
+        background: #ffffff;
+        margin-top:-12px;
+    }
+    .list3{
+        border-top: 0.5px solid #e5e5e5; 
+        border-bottom: 0.5px solid #e5e5e5; 
+        background: #ffffff;
+        margin-bottom:8px;
+    }
+    .btn{
+        width: 80%;
+        margin: 50px auto;
+    }
+    .text-input::-webkit-input-placeholder {
+        color: #dadada;
+        font-size:14px;
+        font-weight: normal;
+    }
+    .select-md{
+        padding:13px 17px 13px 2px;
+    }
+}

@@ -1,0 +1,106 @@
+<ion-header>
+  <ion-navbar color="yel"  hideBackButton="true">      
+    <ion-title text-center>我的</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background: #f9f9f9;">
+  <div class="info">
+    <ion-avatar>
+      <img src="assets/imgs/my.png">
+    </ion-avatar>
+    <p >高静</p>
+    <p style="color:#d9d9d9">河北省 | 石家庄市</p>
+    <p style="color:#999999">北京资芽网络科技有限公司</p>
+  </div>
+  
+  <ion-list class="list">
+    <button ion-item class="item">
+      <ion-avatar item-start>
+        <img src="assets/imgs/my1.png">
+      </ion-avatar>
+      <h4>芽币</h4>
+      <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </button>
+    <button ion-item class="item" (click)="goPublish()">
+      <ion-avatar item-start>
+        <img src="assets/imgs/my2.png">
+      </ion-avatar>
+      <h4>我发布的</h4>
+      <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </button>
+    <button ion-item class="item">
+      <ion-avatar item-start>
+        <img src="assets/imgs/my3.png">
+      </ion-avatar>
+      <h4>我合作的</h4>
+      <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </button>
+  </ion-list>
+
+  <ion-list class="list">
+    <button ion-item class="item">
+      <ion-avatar item-start>
+        <img src="assets/imgs/my4.png">
+      </ion-avatar>
+      <h4>我的收藏</h4>
+      <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </button>
+
+    <button ion-item class="item">
+      <ion-avatar item-start>
+        <img src="assets/imgs/my1.png">
+      </ion-avatar>
+      <h4>我的草稿箱</h4>
+      <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </button>
+
+    <button ion-item class="item">
+      <ion-avatar item-start>
+        <img src="assets/imgs/my2.png">
+      </ion-avatar>
+      <h4>视频发布</h4>
+      <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </button>
+
+    <button ion-item class="item">
+      <ion-avatar item-start>
+        <img src="assets/imgs/my3.png">
+      </ion-avatar>
+      <h4>完善信息</h4>
+      <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </button>
+
+    <button ion-item class="item">
+      <ion-avatar item-start>
+        <img src="assets/imgs/my4.png">
+      </ion-avatar>
+      <h4>VIP等级</h4>
+      <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </button>
+
+    <button ion-item class="item">
+      <ion-avatar item-start>
+        <img src="assets/imgs/my1.png">
+      </ion-avatar>
+      <h4>账户安全</h4>
+      <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </button>
+
+    <button ion-item class="item">
+      <ion-avatar item-start>
+        <img src="assets/imgs/my2.png">
+      </ion-avatar>
+      <h4>帮助与反馈</h4>
+      <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </button>
+
+    <button ion-item class="item" (click)="goSet()">
+      <ion-avatar item-start>
+        <img src="assets/imgs/my3.png">
+      </ion-avatar>
+      <h4>设置</h4>
+      <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </button>
+  </ion-list>
+  

@@ -1,0 +1,61 @@
+page-login {
+    *{
+        margin:0px;
+        padding: 0px;
+    }
+    .btn-forward{
+        color: #afafaf;
+    }
+    .toolbar-title-md{
+        text-align: center;
+        color:#dadada;
+        font-size: 16px;
+    }
+    .logo{
+        height: 80px;
+        margin: 15px auto;
+        text-align: center; 
+        color:#dadada;
+    }
+    .logo img{
+        width: 150px;
+        height: 38px;
+        margin: 0 auto;
+    }
+    .list{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .list .item{
+        height: 7px;
+        padding: 0px;
+        background:rgba(0, 0, 0, 0);
+    }
+    .btn{
+        width: 70%;
+        margin: 17px auto;
+    }
+    .btn .register{
+        margin-top: 17px;
+    }
+    .btn .forget-pwd{
+        color:#dadada;
+        font-weight: normal;
+        font-size:12px;
+        text-align: center;
+    }
+    .list-md .item-block .item-inner{
+        border-bottom:0.5px solid #dadada;
+    }
+    .text-input::-webkit-input-placeholder {
+        color: #dadada;
+        font-size:14px;
+        font-weight: normal;
+    }
+    .label-md{
+        margin: 0px;
+    }
+    .list-ios > .item-block:first-child{
+        border-top:0px;
+    }
+}

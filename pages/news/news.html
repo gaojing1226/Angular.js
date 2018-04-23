@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar color="yel" hideBackButton="true">
+    <ion-buttons left>
+      <button ion-button navPop color="back">
+        <ion-icon name="ios-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+        
+    <ion-title text-center>{{item.name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+  
+<ion-content style="background: #f9f9f9;">
+  <div style="text-align: center;margin-top:10px">{{item.time}}</div>
+  <div>
+    <img src="{{item.avatar}}" style="width: 50px;height:39px;vertical-align: middle">
+    <span style="vertical-align: middle;background-color: white;">{{item.news}}</span>
+  </div>
+  <div style="float:right"> 
+    <span style="vertical-align: middle;background-color: #fedb47;">{{item.news}}</span>
+    <img src="assets/imgs/my.png" style="width: 50px;height:39px;vertical-align: middle">
+  </div>
+</ion-content>
+
+<ion-footer style="background-color:white;height:45px">
+  <ion-item>
+    <ion-icon name="mic" item-start color="yel"></ion-icon>
+    <ion-input clearInput type="text" placeholder="输入聊天内容" ></ion-input>
+    <ion-icon name='happy' color="yel"  item-end></ion-icon>
+    <ion-icon name='add-circle' color="yel" item-end></ion-icon>
+  </ion-item>
+</ion-footer>

@@ -1,0 +1,31 @@
+page-my {
+    *{
+        margin: 0px;
+        padding:0px;
+    }
+    .info{
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+        border-bottom: 0.5px solid #e5e5e5;
+        border-top: 0.5px solid #e5e5e5;
+        margin-bottom: 8px;
+        background-color: #ffffff;
+    }
+    .info img{
+        width: 55px;
+        margin: 0 auto;
+    }
+    .list .item{
+        border-bottom: 0.5px solid #e5e5e5;
+        font-size: 14px;
+    }
+    .list img{
+        width: 30px;
+        height: 30px;
+        margin-top: 6px;
+    }
+    .list .btn-forward{
+        color: #afafaf;
+    }
+}

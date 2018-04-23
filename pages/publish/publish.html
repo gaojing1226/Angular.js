@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar color="yel" hideBackButton="true">
+    <ion-buttons left>
+      <button ion-button navPop color="back">
+        <ion-icon name="ios-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+        
+    <ion-title text-center>我发布的</ion-title>
+  </ion-navbar>
+</ion-header>
+  
+
+<ion-content style="background: #f9f9f9;">
+  <ion-list class="list" *ngFor="let item of items;">
+    <div class="item3">         
+      <span class="span1">{{item.name}}</span> <span class="span2">--FB001</span>
+    </div>
+    <ion-item  class="item4">
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/05-01.png" class="thumb-img">
+      </ion-thumbnail>
+      <p><span class="span2">{{item.diqu}}</span>{{item.beijing}}</p>
+      <p><span class="span2">{{item.laiyuan}}</span>{{item.yinhang}}</p>
+      <p><span class="span2">{{item.leixing}}</span>{{item.diya}}</p>
+      <div class="item-money"><h2>{{item.money1}}</h2><span class="span2">{{item.price1}}</span></div>
+      <div class="item-money2"><h2>{{item.money2}}</h2><span class="span2">{{item.price2}}</span></div>
+      <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </ion-item>
+  </ion-list>
+      
+  <!--上拉加载-->
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content loadingSpinner="ios" loadingText="正在加载..."></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

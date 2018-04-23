@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar color="yel"  hideBackButton="true">      
+    <ion-title text-center>消息</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="list-avatar-page" style="background: #f9f9f9;">
+  <ion-list>
+    <ion-item-sliding *ngFor="let item of items" (click)="goNews(item)">
+      <ion-item class="item">
+        <ion-avatar item-start>
+          <img src="{{item.avatar}}">
+        </ion-avatar>
+        <h2>{{item.name}}</h2>
+        <p>{{item.news}}</p>
+        <ion-note item-end>{{item.time}}</ion-note>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="light" icon-start>置顶</button>
+        <button ion-button color="danger" icon-start>删除</button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

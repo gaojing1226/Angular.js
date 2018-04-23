@@ -1,0 +1,27 @@
+page-selecttype {
+    *{
+        margin:0px;
+        padding: 0px;
+    }
+    .grid{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0px;
+        font-size:15px;
+        text-align: center;
+    }
+    .col{
+        border: 0.5px solid #e5e5e5;
+        margin: 12px;
+        background: #ffffff;
+    }
+    .col .item1-pic{
+        height: 30px;
+        padding-top:4px;
+    }
+    .col span{
+       display: block;
+       padding-top: 6px;
+       padding-bottom: 6px;
+    }
+}

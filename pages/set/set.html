@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar color="yel"  hideBackButton="true">
+    <ion-buttons left>
+      <button ion-button color="back" navPop>
+        <ion-icon name="ios-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+        
+    <ion-title text-center>设置</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background: #f9f9f9;">
+  <ion-list>
+    <button ion-item class="item">
+      <ion-label>图片质量设置</ion-label>
+      <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </button> 
+    <button ion-item  class="item">
+      <ion-label>自动播放设置</ion-label>    
+      <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </button> 
+    <button ion-item class="item">
+      <ion-label>消息提醒设置</ion-label> 
+      <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>    
+    </button> 
+    <button ion-item class="item">
+      <ion-label>开启听筒设置</ion-label>
+      <ion-toggle checked="true"></ion-toggle>  
+    </button> 
+    <button ion-item class="item">
+      <ion-label>关于资芽</ion-label>     
+      <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </button> 
+    <button ion-item class="item">
+      <ion-label>资芽公约(负责声明等)</ion-label>     
+      <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </button> 
+    <button ion-item class="item">
+      <ion-label>把资芽推荐给朋友</ion-label>
+      <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>   
+    </button> 
+    <button ion-item class="item">
+      <ion-label>清除缓存</ion-label>     
+      <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </button>  
+  </ion-list>
+
+  <div class="sign-out">
+    <button ion-button color="yel" (click)="goLogin()">退出登陆</button>
+  </div>
+</ion-content>

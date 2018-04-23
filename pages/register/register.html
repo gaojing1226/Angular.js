@@ -1,0 +1,41 @@
+<ion-header no-border>
+  <ion-navbar transparent  hideBackButton="true">
+    <ion-buttons left>
+      <button ion-button clear color="wh" navPop><ion-icon name="ios-arrow-back"></ion-icon></button>
+    </ion-buttons>
+      
+    <ion-title>手机注册</ion-title>
+  </ion-navbar>
+</ion-header>
+  
+  
+<ion-content style="background-image:url('../assets/imgs/bg.png');background-size:100% 100%;width:100%">
+  <ion-list class="list">
+    <ion-item class="item">
+      <ion-label><ion-icon name="ios-phone-portrait" item-start color="wh"></ion-icon></ion-label>
+      <ion-input  type="text" [(ngModel)]="username"  placeholder="手机号" class="input-text"></ion-input>
+    </ion-item>
+        
+    <ion-item class="item">
+      <ion-label><ion-icon name="ios-paper-outline" item-start color="wh"></ion-icon></ion-label>
+      <ion-input clearInput type="text" placeholder="请输入验证码" ></ion-input>
+      <button ion-button color="yel" item-content>获取验证码</button>
+    </ion-item>
+  
+    <ion-item class="item">
+      <ion-label><ion-icon name="ios-lock-outline" item-start color="wh"></ion-icon></ion-label>
+      <ion-input clearInput type="password" placeholder="密码" [(ngModel)]="password"></ion-input>
+    </ion-item>
+  
+    <ion-item class="item">
+      <ion-label><ion-icon name="ios-lock-outline" item-start color="wh"></ion-icon></ion-label>
+      <ion-input clearInput type="password" placeholder="再次输入密码" [(ngModel)]="password1"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <div class="btn">
+    <button ion-button block round color="yel" (click)="goLogin()">登录</button>
+    <ion-checkbox color="yel" checked="true" style="vertical-align:middle;"></ion-checkbox>
+    <span class="agreement">我已阅读并同意《资芽网注册协议》</span>
+  </div>
+</ion-content>

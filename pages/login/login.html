@@ -1,0 +1,31 @@
+<ion-header no-border>
+  <ion-navbar transparent hideBackButton="true">    
+    <ion-title>登录</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content style="background-image:url('../assets/imgs/bg.png');background-size:100% 100%" overflow-scroll="false">
+  <div class="logo">
+    <img src="/assets/imgs/login.png">
+    <p>全球不良资产超级综合服务平台</p>
+  </div>
+
+  <ion-list class="list">
+    <ion-item class="item">
+      <ion-label><ion-icon name="ios-phone-portrait" item-start color="wh"></ion-icon></ion-label>
+      <ion-input  type="text" [(ngModel)]="username"  placeholder="请输入您的手机号" class="input-text"></ion-input>
+    </ion-item>
+
+    <ion-item class="item">
+      <ion-label><ion-icon name="ios-lock-outline" item-start color="wh"></ion-icon></ion-label>
+      <ion-input clearInput type="password" placeholder="请输入您的密码" [(ngModel)]="password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <div class="btn">
+    <button ion-button block round color="yel" (click)="goHome()">登录</button>             
+    <button ion-button block outline round color="yel" class="register" (click)="goRegister()">注册</button>
+    <button ion-button block clear color="wh" class="forget-pwd" (click)="goForget()">忘记密码?</button>
+  </div>
+</ion-content>

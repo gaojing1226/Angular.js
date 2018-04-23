@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar color="yel"  hideBackButton="true">
+    <ion-buttons left>
+      <button ion-button color="back" navPop>
+        <ion-icon name="ios-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons> 
+
+    <ion-title text-center>发布信息</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="background: #f9f9f9;">
+  <ion-list class="list">
+    <ion-item class="item">
+      <ion-label>地区</ion-label>
+      <ion-select [(ngModel)]="toppings" multiple="true" cancelText="取消" okText="确定!">
+          <ion-option value="bacon">北京市</ion-option>
+          <ion-option value="olives">天津市</ion-option>
+          <ion-option value="xcheese">河北省</ion-option>
+          <ion-option value="peppers">河南省</ion-option>
+          <ion-option value="mushrooms">广东省</ion-option>
+          <ion-option value="onions">广西省</ion-option>
+        </ion-select>
+    </ion-item>
+    <ion-item class="item">
+        <ion-label>来源</ion-label>
+        <ion-input  type="text"></ion-input>
+        <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </ion-item>
+    <ion-item class="item">
+        <ion-label>总金额</ion-label>
+        <ion-input  type="text" placeholder="请输入"></ion-input>
+        <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </ion-item>
+    <ion-item class="item">
+        <ion-label>转让价</ion-label>
+        <ion-input  type="text"></ion-input>
+        <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </ion-item>
+    <ion-item-divider style="background-color: #f9f9f9;">更多描述</ion-item-divider>
+  </ion-list>
+
+  <div class="list2">
+    <ion-textarea placeholder="请输入内容..." [(ngModel)]="comments" min="0" max="150"></ion-textarea>
+  </div>
+  
+  <div class="list3">
+    <button ion-button clear color="back"><ion-icon name="ios-mic-outline"></ion-icon></button>
+    <button ion-button clear color="back"><ion-icon name="ios-image-outline"></ion-icon></button>
+  </div>
+
+  <ion-list class="list">
+    <button ion-item class="item">
+      <ion-label style="color:#999">清单上传</ion-label>
+      <ion-note item-end style="font-size:12px">仅限于PC端上传</ion-note>
+      <button ion-button clear item-end color="forward"><ion-icon name="ios-arrow-forward"></ion-icon></button>
+    </button> 
+  </ion-list>
+
+  <div class="btn">
+    <button ion-button block color="yel" (click)="goPublish()">确认发布</button> 
+  </div>
+</ion-content>

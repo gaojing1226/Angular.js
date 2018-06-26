@@ -11,7 +11,7 @@ export class InputComponent implements OnInit {
   constructor(public getlocaldata: GetdataService) { }
 
   ngOnInit() {}
-  @Output() getData =new EventEmitter();
+  @Output() onkeyup =new EventEmitter();
   
   arrData=[];
   data='';
@@ -19,7 +19,7 @@ export class InputComponent implements OnInit {
   keyData(e){
     if(e.keyCode==13){
       //console.log(this.data);
-      this.getData.emit(this.data);
+      this.onKeyup.emit(this.data);
       this.arrData.push(this.data);
       this.data = '';
     }
